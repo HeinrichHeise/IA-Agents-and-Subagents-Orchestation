@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título Oficial da Aplicação -->
+  <title>IA Orchestation learn</title>
+  
+  <!-- Metadados de Autoria, Propriedade Intelectual e Finalidade Educacional -->
+  <meta name="author" content="@kc_1t (Kauã Miguel) [Obra Original] / Projeto de Estudo Didático">
+  <meta name="copyright" content="Conteúdo e conceitos originais pertencentes a Kauã Miguel (@kc_1t)">
+  <meta name="description" content="Projeto de estudo educacional e acadêmico sem fins comerciais baseado no vídeo 'Pare de Usar 1 Agente de IA Por Vez: Orquestre Agentes de IA' de Kauã Miguel (@kc_1t). Todos os direitos autorais e créditos pertencem integralmente ao autor do vídeo original no YouTube.">
+  <meta name="license" content="Finalidade estritamente didática sob o Art. 46, III e VIII da Lei 9.610/98 e Doutrina de Fair Use">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Folhas de Estilo do Projeto -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+  <!-- Aviso noscript para acessibilidade e conformidade legal sem JS -->
+  <noscript>
+    <div style="padding: 2.5rem; background: #060a12; color: #f8fafc; font-family: sans-serif; text-align: center; border-bottom: 2px solid #38bdf8;">
+      <h2>@kc_1t (Kauã Miguel) - Estudo Didático: Orquestração de Agentes de IA</h2>
+      <p style="margin-top: 0.8rem; color: #94a3b8;">Esta aplicação é um mapa interativo de estudo didático baseado no vídeo de <strong>Kauã Miguel (@kc_1t)</strong>:</p>
+      <p style="margin-top: 0.5rem;"><a href="https://youtu.be/8jvrucR7QCU" style="color: #38bdf8; text-decoration: underline;" target="_blank">Assistir ao vídeo oficial "Pare de Usar 1 Agente de IA Por Vez: Orquestre Agentes de IA" no YouTube ↗</a></p>
+      <p style="margin-top: 1rem; font-size: 0.8rem; color: #64748b;">Obra derivada para fins estritamente didáticos e educacionais (Art. 46, III e VIII da Lei 9.610/98 e Fair Use).</p>
+    </div>
+  </noscript>
+
+  <!-- Contêiner Raiz do React -->
+  <div id="root">
+    <div style="display: flex; height: 100vh; align-items: center; justify-content: center; color: #94a3b8; font-family: sans-serif;">
+      <p>Carregando Estudo Didático sobre Orquestração de IA...</p>
+    </div>
+  </div>
+
+  <!-- Inicialização do React 18 via ESM -->
+  <script type="module">
+    import React from 'https://esm.sh/react@18';
+    import ReactDOM from 'https://esm.sh/react-dom@18/client';
+    import { App } from './src/app.js';
+
+    const rootElement = document.getElementById('root');
+    const root = ReactDOM.createRoot(rootElement);
+    root.render(React.createElement(App));
+  </script>
+</body>
+</html>

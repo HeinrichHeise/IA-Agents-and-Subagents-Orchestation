@@ -1,0 +1,187 @@
+/* ==========================================================================
+   animations.css - Animações de Fluxo, Partículas e Pulsos Visuais
+   ========================================================================== */
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+    border-color: rgba(6, 182, 212, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.6);
+    border-color: rgba(6, 182, 212, 1);
+  }
+}
+
+@keyframes pulseGlowViolet {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.25);
+    border-color: rgba(139, 92, 246, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+    border-color: rgba(139, 92, 246, 1);
+  }
+}
+
+@keyframes flowDash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0px) scale(0.9);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-8px) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) scale(0.9);
+    opacity: 0.6;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pulseDot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(52, 211, 153, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Classes utilitárias de animação */
+.flow-node-card.active {
+  animation: pulseGlow 2.5s infinite;
+}
+
+.status-indicator-dot {
+  animation: pulseDot 2s infinite;
+}
+
+.anim-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.anim-slide-up {
+  animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animated-svg-path {
+  stroke-dasharray: 6, 6;
+  animation: flowDash 1.5s linear infinite;
+}
+
+/* Animações de Sinapses e Axônios Neurais */
+@keyframes synapticPulse {
+  0% {
+    stroke-dashoffset: 60;
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0.5;
+  }
+}
+
+@keyframes actionPotentialFast {
+  0% {
+    stroke-dashoffset: 120;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes neuronEnergyFlow {
+  0% {
+    stroke-dashoffset: 80;
+  }
+  100% {
+    stroke-dashoffset: -80;
+  }
+}
+
+@keyframes reverseFeedbackFlow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 80;
+  }
+}
+
+@keyframes synapticDotSpark {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 6px var(--dot-color, #38bdf8);
+  }
+  50% {
+    transform: scale(1.35);
+    box-shadow: 0 0 16px var(--dot-color, #38bdf8), 0 0 26px var(--dot-color, #38bdf8);
+  }
+}
+
+.synapse-axon-active {
+  stroke-dasharray: 8, 8;
+  animation: actionPotentialFast 1.2s linear infinite;
+}
+
+.synapse-axon-idle {
+  stroke-dasharray: 4, 8;
+  animation: actionPotentialFast 3.5s linear infinite;
+}
+
+.synapse-feedback-active {
+  stroke-dasharray: 6, 6;
+  animation: reverseFeedbackFlow 1.6s linear infinite;
+}
+
+.synaptic-terminal-dot {
+  animation: synapticDotSpark 2s ease-in-out infinite;
+}
