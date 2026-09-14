@@ -84,3 +84,10 @@ A aplicação atende aos quatro pilares de *Fair Use*:
 
 ### 🚫 Declaração de Não-Endosso
 Este projeto é independente e **não possui afiliação comercial, patrocínio ou endosso oficial por parte de Kauã Miguel ou da plataforma YouTube / Google LLC**.
+
+---
+
+## 📊 Avaliação de Orquestração & Melhores Práticas
+Para consultar o relatório analítico sobre o direcionamento de múltiplos subagentes, avaliação de maturidade e padrões de engenharia aplicados neste projeto, acesse:
+- [**Relatório de Avaliação de Orquestração (Nota 17,5 / 20)**](file:///H:/estudos/projetos%20de%20teste/AVALIACAO_ORQUESTRACAO.md)
+
