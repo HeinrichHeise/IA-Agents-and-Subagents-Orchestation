@@ -1,4 +1,4 @@
-# 🎬 @kc_1t (Kauã Miguel) - Estudo Didático: Orquestração de Agentes de IA
+# Estudo Didático: Orquestração de Agentes de IA
 
 > Aplicação visual e interativa com **animações contínuas de fluxo** construída em **React 18, JavaScript ESM, HTML5 e CSS3**, concebida exclusivamente para o estudo didático e aprofundamento técnico da obra:  
 > **[*Pare de Usar 1 Agente de IA Por Vez: Orquestre Agentes de IA*](https://youtu.be/8jvrucR7QCU?si=tyZnklMmEOVBlcXc)** por **Kauã Miguel (@kc_1t)**.
